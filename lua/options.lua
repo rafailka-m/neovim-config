@@ -45,7 +45,7 @@ local opts={ noremap=true, silent=true }
 local normal_mode='n'
 
 map(normal_mode, '<leader>ff', '<cmd>Telescope find_files<CR>', opts)
-map(normal_mode, '<leader>gg', '<cmd>Telescopoe live_grep<CR>', opts)
+map(normal_mode, '<leader>gg', '<cmd>Telescope live_grep<CR>', opts)
 
 -- Previous / next / closing tab mapping
 local map=vim.keymap.set
