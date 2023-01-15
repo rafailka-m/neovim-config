@@ -14,6 +14,16 @@ return require('packer').startup(function(use)
         run = ':TSUpdate',
     }
 
+    use {
+        'hrsh7th/nvim-cmp',
+        requires = {
+            'L3MON4D3/LuaSnip',
+            'saadparwaiz1/cmp_luasnip',
+            'hrsh7th/cmp-nvim-lsp',
+            'hrsh7th/cmp-nvim-lua'
+        }
+    }
+
     -- File finder
     use {
       'nvim-telescope/telescope.nvim', tag = '0.1.0',
@@ -21,5 +31,6 @@ return require('packer').startup(function(use)
     }
 
     -- Colorschemes
-    use 'folke/tokyonight.nvim'
+    -- use 'folke/tokyonight.nvim'
+    use 'morhetz/gruvbox'
 end)

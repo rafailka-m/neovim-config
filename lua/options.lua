@@ -1,4 +1,5 @@
 vim.opt.wrap = false
+vim.opt.number = true
 
 vim.opt.mouse='a'
 vim.opt.encoding='utf-8'
@@ -24,7 +25,7 @@ insert_mode = 'i'
 inoremap(insert_mode, 'jk', '<ESC>')
 
 -- Enable colorscheme
-vim.cmd.colorscheme('tokyonight-storm')
+vim.cmd.colorscheme('gruvbox')
 
 -- Treesitter configuration
 require('nvim-treesitter.configs').setup {
