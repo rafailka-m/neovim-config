@@ -8,6 +8,9 @@ return require('packer').startup(function(use)
     -- LSP
     use 'neovim/nvim-lspconfig'
 
+    -- Background Transparent
+    use 'xiyaowong/nvim-transparent'
+
     -- Syntax highlighting
     use {
         'nvim-treesitter/nvim-treesitter',

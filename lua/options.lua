@@ -57,3 +57,6 @@ map(normal_mode, 'tc', '<cmd>bd<CR>')
 -- autocmd
 vim.cmd("autocmd FileType python map <buffer> <C-h> :w<CR>:exec '!python3.11' shellescape(@%, 1)<CR>")
 vim.cmd("autocmd FileType python set colorcolumn=79")
+
+-- background transparent
+vim.g.transparent_enabled = true
