@@ -8,6 +8,10 @@ return require('packer').startup(function(use)
     -- LSP
     use 'neovim/nvim-lspconfig'
 
+    -- Javascript
+    use 'pangloss/vim-javascript'
+    use 'maxmellon/vim-jsx-pretty'
+
     -- Background Transparent
     use 'xiyaowong/nvim-transparent'
 
