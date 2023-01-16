@@ -29,7 +29,7 @@ vim.cmd.colorscheme('gruvbox')
 
 -- Treesitter configuration
 require('nvim-treesitter.configs').setup {
-    ensure_installed={ "python", "lua" },
+    ensure_installed={ "python", "lua", "sql" },
     highlight={ enable=true }
 }
 
