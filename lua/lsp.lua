@@ -31,14 +31,20 @@ local on_attach = function(client, bufnr)
     map(normal_mode, '<leader>f', vim.lsp.buf.formatting, bufopts)
 end
 
-local lsp_nvim=require('lspconfig')
+local nvim_lsp=require('lspconfig')
 
 local servers = { 'pyright', }
 for _, lsp in ipairs(servers) do
-    lsp_nvim[lsp].setup {
+    nvim_lsp[lsp].setup {
         on_attach=on_attach,
         flags={
             debounce_text_changes=150
         }
     }
 end
+
+-- JS / TS
+nvim_lsp.tsserver.setup {
+    on_attach=on_attach,
+    filetypes={ 'javascript', 'typescript', 'javascriptreact', 'typescriptreact', 'javascript.jsx', 'typescript.tsx' },
+}

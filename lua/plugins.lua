@@ -8,10 +8,6 @@ return require('packer').startup(function(use)
     -- LSP
     use 'neovim/nvim-lspconfig'
 
-    -- Javascript
-    use 'pangloss/vim-javascript'
-    use 'maxmellon/vim-jsx-pretty'
-
     -- Background Transparent
     use 'xiyaowong/nvim-transparent'
 
@@ -37,7 +33,13 @@ return require('packer').startup(function(use)
       requires = { {'nvim-lua/plenary.nvim'} }
     }
 
+    -- Javascript
+    use 'pangloss/vim-javascript'
+    use 'maxmellon/vim-jsx-pretty'
+    use 'peitalin/vim-jsx-typescript'
+
     -- Colorschemes
     -- use 'folke/tokyonight.nvim'
-    use 'morhetz/gruvbox'
-end)
+    -- use 'morhetz/gruvbox'
+    use 'overcache/NeoSolarized'
+    end)
