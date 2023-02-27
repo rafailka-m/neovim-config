@@ -42,4 +42,7 @@ return require('packer').startup(function(use)
     use 'folke/tokyonight.nvim'
     use 'morhetz/gruvbox'
     use 'overcache/NeoSolarized'
+
+    -- Autosave
+    use 'Pocco81/auto-save.nvim'
     end)
