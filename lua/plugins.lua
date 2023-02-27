@@ -45,4 +45,10 @@ return require('packer').startup(function(use)
 
     -- Autosave
     use 'Pocco81/auto-save.nvim'
+
+    use 'kyazdani42/nvim-web-devicons'
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    }
     end)
