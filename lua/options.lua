@@ -25,12 +25,12 @@ insert_mode = 'i'
 inoremap(insert_mode, 'jk', '<ESC>')
 
 -- Enable colorscheme
--- vim.cmd.colorscheme('NeoSolarized')
+vim.cmd.colorscheme('gruvbox')
 
 -- Treesitter configuration
 require('nvim-treesitter.configs').setup {
     ensure_installed={ "python", "lua", "sql", "javascript", "typescript" },
-    highlight={ enable=true }
+    highlight={ enable=false }
 }
 
 -- Telescope configuration

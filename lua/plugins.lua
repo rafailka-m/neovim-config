@@ -39,7 +39,7 @@ return require('packer').startup(function(use)
     use 'peitalin/vim-jsx-typescript'
 
     -- Colorschemes
-    -- use 'folke/tokyonight.nvim'
-    -- use 'morhetz/gruvbox'
+    use 'folke/tokyonight.nvim'
+    use 'morhetz/gruvbox'
     use 'overcache/NeoSolarized'
     end)
