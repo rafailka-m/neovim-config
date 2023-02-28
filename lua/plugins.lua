@@ -39,6 +39,7 @@ return require('packer').startup(function(use)
     use 'peitalin/vim-jsx-typescript'
 
     -- Colorschemes
+    use 'tanvirtin/monokai.nvim'
     use 'folke/tokyonight.nvim'
     use 'morhetz/gruvbox'
     use 'overcache/NeoSolarized'
@@ -50,5 +51,10 @@ return require('packer').startup(function(use)
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    }
+
+    -- Autopairs completion
+    use {
+        "windwp/nvim-autopairs"
     }
     end)
