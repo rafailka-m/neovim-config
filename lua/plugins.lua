@@ -39,6 +39,7 @@ return require('packer').startup(function(use)
     use 'peitalin/vim-jsx-typescript'
 
     -- Colorschemes
+    use {'bluz71/vim-nightfly-colors', as = 'nightfly'}
     use 'tanvirtin/monokai.nvim'
     use 'folke/tokyonight.nvim'
     use 'morhetz/gruvbox'
@@ -56,5 +57,12 @@ return require('packer').startup(function(use)
     -- Autopairs completion
     use {
         "windwp/nvim-autopairs"
+    }
+
+    -- Bufferline
+    use {
+        'akinsho/bufferline.nvim',
+        tag = "v3.*",
+        requires = 'nvim-tree/nvim-web-devicons'
     }
     end)
